@@ -1,0 +1,33 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro   
+        em aventura
+
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.md-5
+            .col-md-6
+                p.parrafo It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.             
+
+                p.parrafo There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.                 
+            .col-md-6
+                img.img-fluid.mb-5(src="/img/inicio_nosotros.jpg", alt="imagen Nosotros")
+        h2.my-5.text-center Proximos Viajes
+        include ../layout/partials/viajes    
+            //-con el include llamas a la vista parcial de viajes (es como un llmado a una funcion)
+    .descuento
+        .container.mt-5
+            .row    
+                .col-md-6
+                    .contenido  
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Agosto 2020 - 30 de Agosto de 2020
+                        p.precio $25,000 Mxn
+    .container
+        h2.my-5.text-center Testimoniales
+        include ../layout/partials/testimoniales    
+            
